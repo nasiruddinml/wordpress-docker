@@ -8,10 +8,15 @@ Running WordPress typically involves installing a LAMP (Linux, Apache, MySQL, an
 - Docker install on your server
 
 
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
-
-
 ### Installation
+
+#### Copy `.env.example` file and update accordingly.
+
+```sh
+cp .env.example .env
+```
+
+#### Update all content inside of wordpress folder
 
 Create the containers with docker-compose up and the -d flag, which will run the db, wordpress, and webserver containers in the background:
 
